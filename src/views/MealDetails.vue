@@ -1,16 +1,16 @@
 <template>
     <div class="max-w-[800px] mx-auto p-8">
       <h1 class="text-4xl font-bold mb-5 text-orange-500">{{ meal.strMeal }}</h1>
-      <img :src="meal.strMealThumb" :alt="meal.strMeal" class="max-w-[100%]">
-      <div class="grid grid-cols-1 sm:grid-cols-3 text-lg py-2">
+      <img :src="meal.strMealThumb" :alt="meal.strMeal" class="max-w-[100%] rounded-t-2xl">
+      <div class="flex items-center justify-center gap-12 mt-2">
         <div>
-          <strong class="font-bold">Category:</strong> {{ meal.strCategory }}
+          <strong class="font-bold text-orange-600">Category:</strong> {{ meal.strCategory }}
         </div>
         <div>
-          <strong class="font-bold">Area:</strong> {{ meal.strArea }}
+          <strong class="font-bold text-orange-600">Area:</strong> {{ meal.strArea }}
         </div>
         <div>
-          <strong class="font-bold">Tags:</strong> {{ meal.strTags }}
+          <strong class="font-bold text-orange-600">Tags:</strong> {{ meal.strTags }}
         </div>
       </div>
   
@@ -18,7 +18,7 @@
         {{ meal.strInstructions }}
       </div>
   
-      <div class="grid grid-cols-1 sm:grid-cols-2">
+      <div class="flex items-center justify-center gap-20">
         <div>
           <h2 class="text-2xl font-semibold mb-2">Ingredients:</h2>
           <ul>
@@ -39,9 +39,9 @@
             </template>
           </ul>
         </div>
-        <div class="mt-6">
+      </div>
+      <div class="mt-10 mb-3 flex items-center justify-center">
           <YouTubeButton :href="meal.strYoutube" />
-        </div>
       </div>
   
   
