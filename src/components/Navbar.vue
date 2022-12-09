@@ -2,9 +2,9 @@
     <header class="bg-white shadow h-16 flex justify-between items-stretch">
       <router-link
         :to="{ name: 'home' }"
-        class="inline-flex items-center h-full px-5 text-orange-500 font-bold"
+        class="inline-flex items-center h-full px-5 text-3xl text-orange-500 font-bold"
       >
-        Home
+        In My Fridge
       </router-link>
       <div class="flex items-center gap-1">
         <router-link

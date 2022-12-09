@@ -14,7 +14,7 @@
           @click.prevent="openIngredient(ingredient)"
           v-for="ingredient of computedIngredients"
           :key="ingredient.idIngredient"
-          class="block bg-white rounded p-3 mb-3 shadow"
+          class="block rounded p-3 mb-3 shadow transition-colors hover:bg-orange-500 hover:text-white"
         >
           <h3 class="text-2xl font-bold mb-2">{{ ingredient.strIngredient }}</h3>
         </a>

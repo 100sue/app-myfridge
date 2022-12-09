@@ -1,6 +1,6 @@
 <template>
     <div
-      class="bg-white shadow rounded-xl hover:scale-105 transition-all"
+      class="bg-gray-400  shadow rounded-xl hover:scale-105 transition-all"
     >
       <router-link :to="{ name: 'mealDetails', params: { id: meal.idMeal } }">
         <img
@@ -14,7 +14,7 @@
         <p class="mb-4">
           {{ $filters.truncateWords(meal.strInstructions, 20) }}
         </p>
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-center mt-11 mb-3">
           <YouTubeButton :href="meal.strYoutube" />
         </div>
       </div>
